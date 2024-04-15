@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Shops Tia Rosa</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery-3.7.1.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+
+<body>
+
+<div>
+  <div>
+    <nav class="nav">
+    <ul>
+        <li><a href="index.html">Home</a>
+    <li><a href="sobrenos.html">Sobre nós</a>
+        <li class="drop"><a href="produtos.html">Produtos</a>
+            <ul class="dropdown">
+                <li><a href="produtos.html">Café</a></li>
+                <li><a href="produtos.html">Café</a></li>
+                <li><a href="produtos.html">Café</a></li>
+            </ul>
+        </li>
+        <li><a href="localizacao.html">Localização</a>
+        <li><a href="contato.html">Contato</a>
+    </ul>
+</nav></div>
+<h1>Onde Estamos</h1>
+<div class="map-responsive">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30707.50353997672!2d-48.10172179367126!3d-15.833563577933322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a333576ee4e7d%3A0x3163082325b297f0!2sCafeteria%20Coffe%20Cake%20Sabor%20e%20Arte!5e0!3m2!1spt-BR!2sbr!4v1713136999362!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<script>
+    $(".drop")
+      .mouseover(function() {
+      $(".dropdown").show(300);
+    });
+    $(".drop")
+      .mouseleave(function() {
+      $(".dropdown").hide(300);     
+    });   
+    </script>
+  <footer>
+    <p>&copy; 2024 Coffee Shops Tia Rosa. Todos os direitos reservados.</p>
+    <p><a href="#"> Trabalhe Conosco</p>
+  </footer>
+</body>
+</html>

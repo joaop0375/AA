@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Shops Tia Rosa</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery-3.7.1.js"></script>
+  <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <div>
+        <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a>
+        <li><a href="sobrenos.html">Sobre nós</a>
+            <li class="drop"><a href="produtos.html">Produtos</a>
+                <ul class="dropdown">
+                    <li><a href="produtos.html">Café</a></li>
+                    <li><a href="produtos.html">Café</a></li>
+                    <li><a href="produtos.html">Café</a></li>
+                </ul>
+            </li>
+            <li><a href="localizacao.html">Localização</a>
+            <li><a href="contato.html">Contato</a>
+        </ul>
+    </nav></div>
+    <main>
+      <section class="produtos">
+        <div class="produto">
+          <img src="img/cafe.jfif" alt="Café">
+          <h2>Café Especial</h2>
+          <p>R$ 5,00</p>
+        </div>
+        <div class="produto">
+          <img src="img/cafe.jfif" alt="Capuccino">
+          <h2>Capuccino Italiano</h2>
+          <p>R$ 7,00</p>
+        </div>
+        <div class="produto">
+          <img src="img/cafe.jfif" alt="Bolo de Chocolate">
+          <h2>Bolo de Chocolate</h2>
+          <p>R$ 4,00</p>
+        </div>
+      </section>
+    </main>
+    <script>
+        $(".drop")
+          .mouseover(function() {
+          $(".dropdown").show(300);
+        });
+        $(".drop")
+          .mouseleave(function() {
+          $(".dropdown").hide(300);     
+        });   
+        </script>
+  <footer>
+    <p>&copy; 2024 Coffee Shops Tia Rosa. Todos os direitos reservados.</p>
+    <p><a href="#"> Trabalhe Conosco</p>
+  </footer>
+</body>
+</html>
